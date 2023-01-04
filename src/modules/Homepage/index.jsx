@@ -42,13 +42,10 @@ const Homepage = () => {
         }
       });
   };
-  useEffect(
-    () => () => {
-      getLatestProjects();
-      getContributorsNumber();
-    },
-    []
-  );
+  useEffect(() => {
+    getLatestProjects();
+    getContributorsNumber();
+  }, []);
   return (
     <>
       <div className="bg-slate-100">
