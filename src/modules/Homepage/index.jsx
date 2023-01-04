@@ -34,6 +34,7 @@ const Homepage = () => {
       .range(0, 8)
       .then((res) => {
         if (!res.error) {
+          console.log(res);
           setProjectNumber(res.count);
           setLatestProjects(res.data);
         } else {
