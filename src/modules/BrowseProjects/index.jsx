@@ -20,12 +20,9 @@ export const BrowseProjects = () => {
         }
       });
   };
-  useEffect(
-    () => () => {
-      getProjects();
-    },
-    []
-  );
+  useEffect(() => {
+    getProjects();
+  }, []);
   return (
     <div>
       <Navbar />

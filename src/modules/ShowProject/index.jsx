@@ -47,16 +47,13 @@ const ShowProject = () => {
         }
       });
   };
-  useEffect(
-    () => () => {
-      setGetAuthData();
-      window.scrollTo(0, 0);
-      getProject();
-      getComments();
-      getProjectRates();
-    },
-    []
-  );
+  useEffect(() => {
+    setGetAuthData();
+    window.scrollTo(0, 0);
+    getProject();
+    getComments();
+    getProjectRates();
+  }, []);
 
   const addCommentHandler = async (e) => {
     e.preventDefault();
